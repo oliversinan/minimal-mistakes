@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "default", "contrast", "air", "dirt", "mint"
 
 # Site Settings
 locale                   : "en"
-title                    : "oliversinan's blog"
+title                    : "oliversinan"
 title_separator          : "-"
 name                     : "Oliver Sinan"
 description              : "Blog posts about machine learning."
