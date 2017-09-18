@@ -7,10 +7,10 @@ header:
 excerpt: '<b>Guides to state of the art machine learning <br>techniques and applications.</b>'
 ---
 <h4 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h4>
-
+<div class="grid__wrapper">
 {% for post in paginator.posts %}
   {% include archive-single.html type="grid"%}
 {% endfor %}
-
+</div>
 {% include paginator.html %}
 
