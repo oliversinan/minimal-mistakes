@@ -5,11 +5,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", "contrast", "air", "dirt", "mint", "sunrise"
 
 # Site Settings
 locale                   : "en"
-title                    : "oliversinan's blog"
+title                    : "oliversinan"
 title_separator          : "-"
 name                     : "Oliver Sinan"
 description              : "Blog posts about machine learning."
@@ -243,7 +243,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
