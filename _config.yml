@@ -80,7 +80,7 @@ analytics:
 # Site Author
 author:
   name             : "Oliver Sinan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.png"
   bio              : "Computer science student."
   location         : "Karlsruhe, Germany"
   email            :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/oliversinan"
   gitlab           :
   google_plus      :
   keybase          :
