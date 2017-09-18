@@ -13,6 +13,11 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
+		{% if post.link %}
+        <a href="{{ post.link }}">
+		{% else %}
+        <a href="{{ post.url | absolute_url }}">
+		{% endif %}
       <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
@@ -22,6 +27,8 @@
           {% endif %}
           alt="">
       </div>
+	  </a>
+	  
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
