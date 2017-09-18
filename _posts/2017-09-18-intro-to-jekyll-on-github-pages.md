@@ -1,4 +1,6 @@
 ---
+header:
+  teaser: assets/images/jekyll_logo.png
 categories:
   - jekyll
   - github
@@ -6,6 +8,7 @@ tags:
   - jekyll
   - github pages
 ---
+{% include toc %}
 In this guide, we will learn how to set up a github user page by forking a given Jekyll template from github. The website will contain a landing page, blog posts (including categorization and tags), additional pages and a navigation bar.
 
 Requirements:
