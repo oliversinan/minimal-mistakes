@@ -11,11 +11,11 @@ In this guide, we will learn how to set up a github user page by forking a given
 Requirements:
 - Github account without a pages respository
 
-## Important
+### Important
 
-This guide only scratches the surface of this templates capabilities and shall only illustrate a bare minimum setup and highlight a few functionalities. For a complete guide and documentation, visit https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/.
+This guide only scratches the surface of this templates capabilities and shall only illustrate a bare minimum setup and highlight a few functionalities. For a complete guide and documentation, visit the [minimal-mistakes github page](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
-# Template Forking
+## Template Forking
 
 For this website, I used the template `minimal-mistakes`.
 First, fork the [template repository](https://github.com/mmistakes/minimal-mistakes) (you have to be logged into github). To be able to reach the forked repository, we have to rename it. Github requires the repository to be named as follows:
@@ -24,7 +24,7 @@ GITHUB_USERNAME.github.io
 ```
 In my case, I had to rename the forked repository to `oliversinan.github.io`. This will be the url to reach our website. Optionally, you can specify another domain in the github repository.
 
-# Settings
+## Settings
 Delete the directories `docs` and `test` as they don't contain necessary files for our use case of the template.
 The `_config.yml` file in the root directory contains most of the options for the template. First, we update the url, in my case:
 ```yaml
@@ -32,8 +32,8 @@ url: "https://oliversinan.github.io"
 ```
 You can set additional parameters such as `title`, `name` and `description` of the website. Much more information on the possible options and parameters can be found [here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
-# Adding content
-## Landing Page
+## Adding content
+### Landing Page
 First off, we update the `index.html` file in the root directory to display an image, some custom text and set it up to be the root page of our website.
 ```yaml
 ---
@@ -60,7 +60,7 @@ Additionally, we're going to display the most recent blog posts by adding follow
 
 ```
 The number of displayed posts per page can be changed in `_config.yml`.
-## Blog Posts
+### Blog Posts
 Now, we'll create a post which will be displayed on our home page. Create a subdirectory named `_posts` in the root directory of the repository. Jekyll will look inside this directory for blog posts. The files in this subdirectory have to adhere to a specific naming convention, containing the date of the post and a title slug. For example, the file name for this blog post is:
 ```
 2017-09-18-intro-to-jekyll-on-github-pages.md
@@ -82,7 +82,7 @@ More content will follow shortly!
 
 ```
 The url to the page will be automatically generated, depending on the used categories, tags and slug, in this case it is: https://oliversinan.github.io/jekyll/github/intro-to-jekyll-on-github-pages/. You can also set the url manually by adding the `permalink` tag (e.g. see Landing Page).
-## Pages
+### Pages
 Adding a page is similar to adding a post. First, we have to create a subdirectory named `_pages` in the root directory of the repository. We will now add a page displaying all posts grouped by category. Create a file named `category_archive.html` with following content:
 ```yaml
 ---
@@ -107,7 +107,7 @@ author_profile: true
 
 ```
 
-## Navigation Bar
+### Navigation Bar
 To have easy access to our landing and category page, we will modify the navigation bar. Update the file `_data\navigation.yml` to contain following code:
 ```yaml
 - title: "Home"
