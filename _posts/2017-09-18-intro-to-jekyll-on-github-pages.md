@@ -68,7 +68,7 @@ Now, we'll create a post which will be displayed on our home page. Create a subd
 ```
 2017-09-18-intro-to-jekyll-on-github-pages.md
 ```
-The style of the files in the `_posts` directory has already been specified at the bottom of our `_config.yml` file. This is called the Front End Layout and saves us from repeating the same layout choices in every posts.
+The style of the files in the `_posts` directory has already been specified at the bottom of our `_config.yml` file. This is called the Front Matter Layout and saves us from repeating the same layout choices in every posts.
 
 The following code shows an example post defining categories, tags and a little text to display.
 ```yaml
